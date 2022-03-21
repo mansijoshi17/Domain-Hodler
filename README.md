@@ -6,6 +6,9 @@ Users will be able to create NFT versions of their domain names and incase of We
 
 All domains will be represented as NFT in Blockchain. Users can join specific groups & attends events as per the NFT they are holding. For example, users who have three-letter domain name NFT are allowed to join the particular event.
 
+![Home](wallets.png)
+
+
 ![Home](home1.png)
 
 
