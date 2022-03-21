@@ -1,0 +1,100 @@
+.custom-icon {
+  height: 28px;
+}
+
+.bg-icon {
+  height: 240px;
+}
+.slick-slide.slick-cloned,
+.slick-slide.slick-active {
+  width: 305.25px;
+  margin-right: 25px;
+}
+
+.currentPrice {
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.price {
+  display: flex;
+  font-size: 25px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.bg-container {
+  background-image: url(/img/background/subheader.jpg);
+}
+
+.bg-myitems {
+  background: url(/img/author_single/author_banner.jpg) center top / cover;
+}
+
+button.MuiButtonBase-root.MuiFab-root.ml-3.font-weight-bold.MuiFab-primary {
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  button.MuiButtonBase-root.MuiFab-root.ml-3.font-weight-bold.MuiFab-primary {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+.row.wow.fadeIn.animated.animated {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.time {
+  font-size: 9px !important;
+}
+
+.socials i {
+  margin-right: 14px;
+  font-size: 17px;
+  color: #d2c8c8;
+  cursor: pointer;
+}
+
+.feed-image img {
+  width: 100%;
+  height: auto;
+}
+
+.no-bottom,
+.no-top {
+  margin-top: 35px;
+}
+
+.list-group-item {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.info {
+  height: 230px;
+}
+
+.logoImg {
+  width: 300px;
+  height: 200px;
+}
+
+a.urlclass {
+  vertical-align: top;
+  padding-left: 20px;
+}
+
+span.domainPrice{
+  vertical-align: top;
+  padding-left: 20px;
+  margin-bottom: auto;
+}
