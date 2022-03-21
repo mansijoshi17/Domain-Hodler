@@ -113,12 +113,23 @@ function Header() {
                 ) : (
                   currentAddress
                 )} */}
-                {user == "" ? (
+                {currentAddress === "" ||
+                currentAddress === "null" ||
+                currentAddress === null ||
+                currentAddress === "undefined" ? (
                   <>
-                    <a className="btn-main" style={{ marginLeft: "10px" }}>
-                      <i className="icon_wallet_alt"></i>
-                      <span>Connect Wallet</span>
-                    </a>
+                    <div
+                      className="menu_side_area"
+                      id="connect"
+                      onClick={() => connectWallet()}
+                    >
+                      <a className="btn-main">
+                        <i className="icon_wallet_alt"></i>
+                        <span>Connect Wallet</span>
+                      </a>
+
+                      <span id="menu-btn" />
+                    </div>
                     <a
                       className="btn-main"
                       onClick={handleLogin}
@@ -129,8 +140,38 @@ function Header() {
                     </a>
                   </>
                 ) : (
-                  user
+                  <div className="profile_name">
+                    <span
+                      id="wallet"
+                      className="profile_wallet"
+                      style={{ color: "white" }}
+                    >
+                      {currentAddress ? (
+                        currentAddress
+                      ) : (
+                        <>
+                          <a className="btn-main">
+                            <i className="icon_wallet_alt"></i>
+                            <span>Connect Wallet</span>
+                          </a>
+                          <a
+                            className="btn-main"
+                            onClick={handleLogin}
+                            style={{ marginLeft: "20px" }}
+                          >
+                            <i className="icon_wallet_alt"></i>
+                            <span>Login with Unstoppable</span>
+                          </a>
+                        </>
+                      )}
+                    </span>
+                    {/* <button type="button" id="btn_copy" title="Copy Text">
+                              Copy
+                            </button>  */}
+                    <span id="menu-btn" />
+                  </div>
                 )}
+
                 {/* {Object.keys(connectors).map((v) => (
                   <a
                     className="btn-main"
