@@ -15,7 +15,7 @@ function Header() {
   const [isSticky, setSticky] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState();
-  const [user, setUser] = useState();
+  const [user, setUser] = useState("");
 
   const ref = useRef(null);
   const handleScroll = () => {
@@ -105,10 +105,32 @@ function Header() {
                     </a>
                   </li> */}
                 </ul>
-                <a className="btn-main" onClick={handleLogin}>
-                  <i className="icon_wallet_alt"></i>
-                  <span>Login with Unstoppable</span>
-                </a>
+                {/* {user == "" && currentAddress == "" ? (
+                  <a className="btn-main" onClick={() => connectWallet()}>
+                    <i className="icon_wallet_alt"></i>
+                    <span>Connect Wallet</span>
+                  </a>
+                ) : (
+                  currentAddress
+                )} */}
+                {user == "" ? (
+                  <>
+                    <a className="btn-main" style={{ marginLeft: "10px" }}>
+                      <i className="icon_wallet_alt"></i>
+                      <span>Connect Wallet</span>
+                    </a>
+                    <a
+                      className="btn-main"
+                      onClick={handleLogin}
+                      style={{ marginLeft: "20px" }}
+                    >
+                      <i className="icon_wallet_alt"></i>
+                      <span>Login with Unstoppable</span>
+                    </a>
+                  </>
+                ) : (
+                  user
+                )}
                 {/* {Object.keys(connectors).map((v) => (
                   <a
                     className="btn-main"
