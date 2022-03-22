@@ -1,2 +1,2 @@
-export const domainTokenaddress = "0xa237191007FeD8bF85e5E14eeDf628Da28CAAc6b"
-export const domainMarketaddress = "0xBc2a6ade58eC3C11169515F9765Eb04DF4956bf6"
+export const domainTokenaddress = "0xCf4056B4bD23618013D59d154EaFDccfA4015A4E"
+export const domainMarketaddress = "0x85e706b299A51Ba75835662C577F370C6fD90A33"
